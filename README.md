@@ -24,7 +24,7 @@
 
 ## Files:
 
-- Download the [zip file](http://www.gd-build.com/gd-front-end-dev-t1.zip): and unzip locally on your PC.
+- Download the [zip file](http://www.gd-build.com/gd-front-end-dev-t1.zip) and unzip locally on your PC.
 - "use-these-assets" folder:
   - use them!
   - icon-fonts.css is the Elegant Icons css file to include on your HTML page.
