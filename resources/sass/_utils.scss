@@ -1,0 +1,47 @@
+.text-capitalize {
+  text-transform: capitalize;  
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-notransform {
+  text-transform: none;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+
+.visible-sm {
+  @media(min-width: $container-sm-width) {
+    display: none;
+  }
+}
+.hidden-xs {
+  @media(max-width: $container-xs-width) {
+    display: none;
+  }
+}
+.hidden-sm {
+  @media(min-width: $container-xs-width) and (max-width: $container-sm-width) {
+    display: none;
+  }
+}
+.hidden-md {
+  @media(min-width: $container-sm-width) and (max-width: $container-md-width) {
+    display: none;
+  }
+}
+.hidden-lg {
+  @media(min-width: $container-md-width) {
+    display: none;
+  }
+}
+.img-fluid, figure > img {
+  max-width: 100%;
+}

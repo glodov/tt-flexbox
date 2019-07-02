@@ -1,0 +1,33 @@
+{
+  "name": "tt-flexbox",
+  "version": "1.0.0",
+  "description": "The Flexbox test task to check the skills of using flexbox 2017",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "styles": "sass resources/sass/app.scss:assets/css/app.css",
+    "render": "node render.js",
+    "watch": "nodemon -e resources -x \"npm run styles\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glodov/tt-flexbox.git"
+  },
+  "keywords": [
+    "flexbox",
+    "flex",
+    "css3",
+    "html5"
+  ],
+  "author": "Yaroslav Glodov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glodov/tt-flexbox/issues"
+  },
+  "homepage": "https://github.com/glodov/tt-flexbox#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}

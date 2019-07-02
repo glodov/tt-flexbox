@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox test task</title>
+    <link href="/assets/css/icon-fonts.css" rel="stylesheet">
+    <link href="/assets/css/fonts.css" rel="stylesheet">
+    <link href="/assets/css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <div class="flex flex-column">
+        <div class="top-nav flex text-uppercase">
+          <div class="nav flex flex-half"><a class="text-left" href="/shop/sale">10% Off orders over $99</a></div>
+          <div class="nav flex flex-half"><a href="/faq"><em class="icon icon_question_alt"></em><span>FAQs</span></a><a href="/forum"><em class="icon icon_chat"></em><span>Rewards</span></a><a href="/rewards"><em class="icon icon_gift"></em><span>Rewards</span></a><a href="/contact-us"><em class="icon icon_mail"></em><span>Contact us</span></a></div>
+        </div>
+        <div class="search-nav flex text-capitalize"><a class="logo" href="/"><img src="/assets/img/gd-logo.gif" alt="GD"></a>
+          <div class="search">
+            <form class="flex" action="/search" method="GET">
+              <input type="text" name="q" placeholder="Search">
+              <button type="submit" name="submit" title="Search"><em class="icon icon_search"></em></button>
+            </form>
+          </div>
+          <div class="nav flex"><a class="hidden-lg" href="/nav"><em class="icon icon_menu"></em>Menu</a><a href="/my/cart"><em class="icon icon_cart"></em>My cart</a><a href="/my/login"><em class="icon icon_lock"></em>Sign in</a></div>
+        </div>
+        <div class="nav main-nav flex text-uppercase hidden-xs hidden-sm hidden-md"><a href="/shop/oils">Oils</a><a href="/shop/bases">Bases </a><a href="/shop/soapmaking">Soapmaking</a><a href="/shop/ingredients">Ingredients</a><a href="/shop/misc">Misc</a><a href="/shop/resources">Resources</a><a href="/shop/gift-certificates">Gift certificates</a><a href="/shop/sale">Sale</a></div>
+      </div>
+      <div class="hero text-center"><img class="img-fluid" src="/assets/img/d-hero.gif" srcset="/assets/img/m-hero.gif 480w, /assets/img/d-hero.gif 1280w" sizes="(max-width: 749px) 480px, 1280px" alt="Hero"></div>
+    </header>
+    <div class="content">
+      <section class="title bg-gray">
+        <h2 class="h5 text-center text-uppercase">Welcome to our layout site. Today, everything is free.</h2>
+      </section>
+      <section class="promo-articles flex" id="promo">
+        <article>
+          <div class="content">
+            <h4 class="lead text-uppercase">Promo 1</h4>
+            <h3 class="h5 text-capitalize">Product name here</h3>
+            <p>Some helpful message or something really important and fun.</p>
+          </div>
+        </article>
+        <article>
+          <div class="content">
+            <h4 class="lead text-uppercase">Promo 2</h4>
+            <h3 class="h5 text-capitalize">Category name is here too</h3>
+            <p>Something tasty.</p>
+          </div>
+        </article>
+        <article>
+          <div class="content">
+            <h4 class="lead text-uppercase">Promo 3</h4>
+            <h3 class="h5 text-capitalize">Some page</h3>
+            <p>Wow, what else is there relally here?</p>
+          </div>
+        </article>
+      </section>
+      <section class="articles title bg-gray font-secondary" id="articles">
+        <h1 class="h3 text-center text-uppercase font-primary">Glendale Designs welcomes you!</h1>
+        <div class="articles-container flex">
+          <article>
+            <figure><img src="/assets/img/picture.gif" alt="Pretty picture">
+              <figcaption>This is a really pretty picture!</figcaption>
+            </figure>
+            <div class="content">
+              <p>01.01.18</p>
+              <h4 class="lead">My first awesome story</h4>
+              <p>
+                The details of such an awesome story nobody ever believe such a 
+                story could ever be told. It's an epic adventure!
+              </p><a href="/blog/1st-awesome-story">...read more</a>
+            </div>
+          </article>
+          <article>
+            <figure><img src="/assets/img/picture.gif" alt="Pretty picture">
+              <figcaption>This is also a really pretty picture!</figcaption>
+            </figure>
+            <div class="content">
+              <p>02.02.18</p>
+              <h4 class="lead">My second awesome story</h4>
+              <p>
+                Again, just like the first, the details are heroic. We know you'll 
+                love what we have to tell.
+              </p><a href="/blog/2nd-awesome-story">...read more</a>
+            </div>
+          </article>
+        </div>
+        <div class="flex justify-center"><a class="btn" href="/contact-us#application-form">Contact us to get started!</a></div>
+      </section>
+    </div>
+    <footer class="font-secondary">
+      <div class="flex footer-nav text-capitalize">
+        <div class="flex flex-column">
+          <h4 class="h6 font-primary text-uppercase">
+             Customer tools</h4><a href="/">Home</a><a href="/my/login">Sign in</a><a href="/my/orders">Order history</a><a href="/my/whishes">Wish lists</a><a href="/shop/gift-certificates">Gift certificates</a>
+        </div>
+        <div class="flex flex-column">
+          <h4 class="h6 font-primary text-uppercase">
+             Support</h4><a href="/contact-us">Contact us</a><a href="/terms-and-conditions">Terms &amp; Conditions</a><a href="/privacy-policy">Privacy policy</a><a href="/shipping-and-returns">Shipping and returns</a>
+        </div>
+        <div class="flex flex-column">
+          <h4 class="h6 font-primary text-uppercase">
+             Contact us</h4><a href="tel:+15556667777">Call: 555-666-7777</a><a href="mailto:some.email@gmail.com">Email us</a><br>
+          <div class="social"><a href="https://instagram.com"><em class="icon social_instagram_square"></em></a><a href="https://facebook.com"><em class="icon social_facebook_circle"></em></a><a href="https://twitter.com"><em class="icon social_twitter_circle"></em></a><a href="https://youtube.com"><em class="icon social_youtube_circle"></em></a></div>
+        </div>
+        <div class="flex flex-column">
+          <article>
+            <div class="content">
+              <h4 class="h6 font-primary text-uppercase">Promo 4</h4>
+              <h3 class="h4">Category of product 4</h3>
+              <div>
+                <p>
+                  Some helpful message or something. Possible a mission statement 
+                  or some random coupon for people lurking on the footer with nothing 
+                  better to do.
+                </p><a class="text-notransform" href="/shop/best-soap-ever-summer-edition">.. read more</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </footer>
+    <div class="flex footer-copy text-uppercase">
+      <div>&copy; Copyright 2019 Glendale Designs All rights reserved.</div>
+      <div><a href="#header">Top<em class="icon arrow_triangle-up"></em></a></div>
+    </div>
+  </body>
+</html>

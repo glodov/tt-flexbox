@@ -1,0 +1,235 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    title Flexbox test task
+
+    link(href='/assets/css/icon-fonts.css', rel='stylesheet')
+    link(href='/assets/css/fonts.css', rel='stylesheet')
+    link(href='/assets/css/app.css', rel='stylesheet')
+  body
+    header#header
+      //- top navigation block
+      div.flex.flex-column
+        //- the first row
+        div.top-nav.flex.text-uppercase
+          div.nav.flex.flex-half
+            a.text-left(href='/shop/sale')
+              | 10% Off orders over $99
+
+          div.nav.flex.flex-half
+            a(href='/faq')
+              em.icon.icon_question_alt
+              span
+                | FAQs
+            a(href='/forum')
+              em.icon.icon_chat
+              span
+                | Rewards
+            a(href='/rewards')
+              em.icon.icon_gift
+              span
+                | Rewards
+            a(href='/contact-us')
+              em.icon.icon_mail
+              span
+                | Contact us
+
+        //- the second row
+        div.search-nav.flex.text-capitalize
+          a.logo(href='/')
+            img(src='/assets/img/gd-logo.gif', alt='GD')
+          div.search
+            form.flex(action='/search', method='GET')
+              input(type='text', name='q', placeholder='Search')
+              button(type='submit', name='submit', title='Search')
+                em.icon.icon_search
+          div.nav.flex
+            a.hidden-lg(href='/nav')
+              em.icon.icon_menu
+              | Menu
+            a(href='/my/cart')
+              em.icon.icon_cart
+              | My cart
+            a(href='/my/login')
+              em.icon.icon_lock
+              | Sign in
+
+        //- the third row
+        div.nav.main-nav.flex.text-uppercase.hidden-xs.hidden-sm.hidden-md
+          a(href='/shop/oils')
+            | Oils
+          a(href='/shop/bases')
+            | Bases 
+          a(href='/shop/soapmaking')
+            | Soapmaking
+          a(href='/shop/ingredients')
+            | Ingredients
+          a(href='/shop/misc')
+            | Misc
+          a(href='/shop/resources')
+            | Resources
+          a(href='/shop/gift-certificates')
+            | Gift certificates
+          a(href='/shop/sale')
+            | Sale
+
+      //- hero block
+      div.hero.text-center
+        img.img-fluid(
+          src='/assets/img/d-hero.gif'
+          srcset='/assets/img/m-hero.gif 480w, /assets/img/d-hero.gif 1280w'
+          sizes='(max-width: 749px) 480px, 1280px'
+          alt='Hero'
+        )
+
+    //- content block
+    div.content
+      section.title.bg-gray
+        h2.h5.text-center.text-uppercase
+          | Welcome to our layout site. Today, everything is free.
+
+      section#promo.promo-articles.flex
+        article
+          div.content
+            h4.lead.text-uppercase
+              | Promo 1
+            h3.h5.text-capitalize
+              | Product name here
+            p
+              | Some helpful message or something really important and fun.
+            
+        article
+          div.content
+            h4.lead.text-uppercase
+              | Promo 2
+            h3.h5.text-capitalize
+              | Category name is here too
+            p
+              | Something tasty.
+            
+        article
+          div.content
+            h4.lead.text-uppercase
+              | Promo 3
+            h3.h5.text-capitalize
+              | Some page
+            p
+              | Wow, what else is there relally here?
+      
+      section#articles.articles.title.bg-gray.font-secondary
+        h1.h3.text-center.text-uppercase.font-primary
+          | Glendale Designs welcomes you!
+        
+        div.articles-container.flex
+          article
+            figure
+              img(src='/assets/img/picture.gif', alt='Pretty picture')
+              figcaption
+                | This is a really pretty picture!
+            div.content
+              p
+                | 01.01.18
+              h4.lead
+                | My first awesome story
+              p.
+                The details of such an awesome story nobody ever believe such a 
+                story could ever be told. It's an epic adventure!
+              a(href='/blog/1st-awesome-story')
+                | ...read more
+
+          article
+            figure
+              img(src='/assets/img/picture.gif', alt='Pretty picture')
+              figcaption
+                | This is also a really pretty picture!
+            div.content
+              p
+                | 02.02.18
+              h4.lead
+                | My second awesome story
+              p.
+                Again, just like the first, the details are heroic. We know you'll 
+                love what we have to tell.
+              a(href='/blog/2nd-awesome-story')
+                | ...read more
+
+        div.flex.justify-center
+          a.btn(href='/contact-us#application-form')
+            | Contact us to get started!
+
+
+    //- footer block
+    footer.font-secondary
+      div.flex.footer-nav.text-capitalize
+        //- first column
+        div.flex.flex-column
+          h4.h6.font-primary.text-uppercase 
+            | Customer tools
+          a(href='/')
+            | Home
+          a(href='/my/login')
+            | Sign in
+          a(href='/my/orders')
+            | Order history
+          a(href='/my/whishes')
+            | Wish lists
+          a(href='/shop/gift-certificates')
+            | Gift certificates
+
+        //- second column
+        div.flex.flex-column
+          h4.h6.font-primary.text-uppercase 
+            | Support
+          a(href='/contact-us')
+            | Contact us
+          a(href='/terms-and-conditions')
+            | Terms &amp; Conditions
+          a(href='/privacy-policy')
+            | Privacy policy
+          a(href='/shipping-and-returns')
+            | Shipping and returns
+
+        //- third column
+        div.flex.flex-column
+          h4.h6.font-primary.text-uppercase 
+            | Contact us
+          a(href='tel:+15556667777')
+            | Call: 555-666-7777
+          a(href='mailto:some.email@gmail.com')
+            | Email us
+          br
+          div.social
+            a(href='https://instagram.com')
+              em.icon.social_instagram_square
+            a(href='https://facebook.com')
+              em.icon.social_facebook_circle
+            a(href='https://twitter.com')
+              em.icon.social_twitter_circle
+            a(href='https://youtube.com')
+              em.icon.social_youtube_circle
+
+        //- fourth column
+        div.flex.flex-column
+          article
+            div.content
+              h4.h6.font-primary.text-uppercase
+                | Promo 4
+              h3.h4
+                | Category of product 4
+              div
+                p.
+                  Some helpful message or something. Possible a mission statement 
+                  or some random coupon for people lurking on the footer with nothing 
+                  better to do.
+                a.text-notransform(href='/shop/best-soap-ever-summer-edition')
+                  | .. read more
+
+    div.flex.footer-copy.text-uppercase
+      div
+        | &copy; Copyright 2019 Glendale Designs All rights reserved.
+      div
+        a(href='#header')
+          | Top
+          em.icon.arrow_triangle-up
