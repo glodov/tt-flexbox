@@ -62,3 +62,13 @@ Open your browser and go to [127.0.0.1:3333](http://127.0.0.1:3333).
 Here is in repository you can see `Dockerfile` config file and `docker-compose.yml`.  
 You can easily run the project with next command line: `docker-compose up -d`.  
 If you can see the last line of texx `Example app listening on port 3333!`, open your browser and go to [0.0.0.0:3333](http://0.0.0.0:3333)
+
+### On the server
+
+Just upload `index.html` and `assets/*` on the server and check it in the browser.
+
+## Technologies used
+
+`nodejs` for the server.  
+`pug` as HTML template engine.  
+`sass` as CSS extension language.  
