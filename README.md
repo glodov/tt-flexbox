@@ -33,3 +33,32 @@
   - Screen renders of the exact design you are to make.
 - Watch [this quick video](https://www.youtube.com/watch?v=sHoVHOUTZCg) on the end result
 
+## Time spent
+- 1st step __00:54__
+- 2nd step __00:41__
+- 3rd step __01:09__
+- 4th step __00:46__
+- 5th step __01:03__
+- 6th step __01:40__
+
+__TOTAL time spent: 6 hours 13 minutes__
+
+## Test version
+
+Here you can try to check the task [tt-flexbox.yaro.info](http://tt-flexbox.yaro.info/)
+
+## Run locally
+
+### NodeJS from command line
+
+Open command line and go to current directory.  
+Check if you have node and npm installed.  
+Run this command: `npm run start`. 
+It should show you the last line of text: `Example app listening on port 3333!`.  
+Open your browser and go to [127.0.0.1:3333](http://127.0.0.1:3333).
+
+### Docker virtualization
+
+Here is in repository you can see `Dockerfile` config file and `docker-compose.yml`.  
+You can easily run the project with next command line: `docker-compose up -d`.  
+If you can see the last line of texx `Example app listening on port 3333!`, open your browser and go to [0.0.0.0:3333](http://0.0.0.0:3333)

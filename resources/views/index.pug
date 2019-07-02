@@ -77,10 +77,12 @@ html
 
       //- hero block
       div.hero.text-center
-        img.img-fluid(
+        img.img-fluid.hidden-xs.hidden-md(
           src='/assets/img/d-hero.gif'
-          srcset='/assets/img/m-hero.gif 480w, /assets/img/d-hero.gif 1280w'
-          sizes='(max-width: 749px) 480px, 1280px'
+          alt='Hero'
+        )
+        img.img-fluid.hidden-md.hidden-lg(
+          src='/assets/img/m-hero.gif'
           alt='Hero'
         )
 

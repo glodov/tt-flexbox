@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 const pug = require('pug')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3333
 
 const viewFile = path.resolve(__dirname, 'resources/views/index.pug')
 const htmlFile = path.resolve(__dirname, 'index.html')
