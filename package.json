@@ -28,6 +28,6 @@
   "homepage": "https://github.com/glodov/tt-flexbox#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   }
 }
